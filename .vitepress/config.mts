@@ -4,11 +4,14 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "LyonWong",
   description: "LyonWong's Cyber Space",
+  cleanUrls: true,
   themeConfig: {
     logo: '/assets/name.jpg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
+      { text: '日记', link: '/diary/' },
+      { text: '收藏', link: '/collect'}
     ],
 
     sidebar: [
