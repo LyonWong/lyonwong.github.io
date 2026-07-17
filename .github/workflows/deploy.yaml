@@ -26,7 +26,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Setup Pages
@@ -41,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist # 这里的路径需要和你的 docs 目录一致
+          path: .vitepress/dist # 这里的路径需要和你的 docs 目录一致
 
       - name: Deploy to GitHub Pages
         id: deployment
